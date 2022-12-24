@@ -1,0 +1,139 @@
+2022-12-23T23:56:53.1325781Z ##[section]Starting: Job
+2022-12-23T23:56:53.3132604Z ##[section]Starting: Initialize job
+2022-12-23T23:56:53.3133902Z Agent name: 'Hosted Agent'
+2022-12-23T23:56:53.3134279Z Agent machine name: 'fv-az459-237'
+2022-12-23T23:56:53.3134487Z Current agent version: '2.213.2'
+2022-12-23T23:56:53.3169632Z ##[group]Operating System
+2022-12-23T23:56:53.3169833Z Ubuntu
+2022-12-23T23:56:53.3169948Z 22.04.1
+2022-12-23T23:56:53.3170064Z LTS
+2022-12-23T23:56:53.3170186Z ##[endgroup]
+2022-12-23T23:56:53.3170319Z ##[group]Runner Image
+2022-12-23T23:56:53.3170479Z Image: ubuntu-22.04
+2022-12-23T23:56:53.3170634Z Version: 20221212.1
+2022-12-23T23:56:53.3170926Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20221212.1/images/linux/Ubuntu2204-Readme.md
+2022-12-23T23:56:53.3171311Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20221212.1
+2022-12-23T23:56:53.3171543Z ##[endgroup]
+2022-12-23T23:56:53.3171701Z ##[group]Runner Image Provisioner
+2022-12-23T23:56:53.3171960Z 2.0.91.1
+2022-12-23T23:56:53.3172092Z ##[endgroup]
+2022-12-23T23:56:53.3172898Z Current image version: '20221212.1'
+2022-12-23T23:56:53.3174705Z Agent running as: 'vsts'
+2022-12-23T23:56:53.3214648Z Prepare build directory.
+2022-12-23T23:56:53.3448597Z Set build variables.
+2022-12-23T23:56:53.3478096Z Download all required tasks.
+2022-12-23T23:56:53.3584215Z Downloading task: CmdLine (2.212.0)
+2022-12-23T23:56:54.2975378Z Checking job knob settings.
+2022-12-23T23:56:54.2984566Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2022-12-23T23:56:54.2985875Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-12-23T23:56:54.2987799Z Finished checking job knob settings.
+2022-12-23T23:56:54.3269389Z Start tracking orphan processes.
+2022-12-23T23:56:54.3429738Z ##[section]Finishing: Initialize job
+2022-12-23T23:56:54.3684736Z ##[section]Starting: Checkout jwtWebApi@master to s
+2022-12-23T23:56:54.3895348Z ==============================================================================
+2022-12-23T23:56:54.3895893Z Task         : Get sources
+2022-12-23T23:56:54.3896607Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:56:54.3896857Z Version      : 1.0.0
+2022-12-23T23:56:54.3897140Z Author       : Microsoft
+2022-12-23T23:56:54.3897611Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:56:54.3897918Z ==============================================================================
+2022-12-23T23:56:55.3425113Z Syncing repository: jwtWebApi (Git)
+2022-12-23T23:56:55.3431908Z ##[command]git version
+2022-12-23T23:56:55.3438540Z git version 2.38.2
+2022-12-23T23:56:55.3439519Z ##[command]git lfs version
+2022-12-23T23:56:55.3446294Z git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
+2022-12-23T23:56:55.3448812Z ##[command]git init "/home/vsts/work/1/s"
+2022-12-23T23:56:55.3454309Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-12-23T23:56:55.3454726Z hint: is subject to change. To configure the initial branch name to use in all
+2022-12-23T23:56:55.3455104Z hint: of your new repositories, which will suppress this warning, call:
+2022-12-23T23:56:55.3455385Z hint: 
+2022-12-23T23:56:55.3455706Z hint: 	git config --global init.defaultBranch <name>
+2022-12-23T23:56:55.3455961Z hint: 
+2022-12-23T23:56:55.3456305Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-12-23T23:56:55.3456765Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-12-23T23:56:55.3457054Z hint: 
+2022-12-23T23:56:55.3457318Z hint: 	git branch -m <name>
+2022-12-23T23:56:55.3457946Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2022-12-23T23:56:55.3459707Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.3471058Z ##[command]git config gc.auto 0
+2022-12-23T23:56:55.3478499Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi.extraheader
+2022-12-23T23:56:55.3486528Z ##[command]git config --get-all http.extraheader
+2022-12-23T23:56:55.3493894Z ##[command]git config --get-regexp .*extraheader
+2022-12-23T23:56:55.3500924Z ##[command]git config --get-all http.proxy
+2022-12-23T23:56:55.3507872Z ##[command]git config http.version HTTP/1.1
+2022-12-23T23:56:55.3517106Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +b73f01a8e5def98d01df8f99cc21a4e513ef00c3:refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.3523205Z remote: Azure Repos        
+2022-12-23T23:56:55.3523429Z remote: 
+2022-12-23T23:56:55.3523690Z remote: Found 18 objects to send. (0 ms)        
+2022-12-23T23:56:55.3524379Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.3524941Z  * [new ref]         b73f01a8e5def98d01df8f99cc21a4e513ef00c3 -> origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.3917323Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.4257667Z remote: Azure Repos        
+2022-12-23T23:56:55.4259648Z remote: 
+2022-12-23T23:56:55.4274560Z remote: Found 0 objects to send. (0 ms)        
+2022-12-23T23:56:55.4274961Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.4275694Z  * branch            b73f01a8e5def98d01df8f99cc21a4e513ef00c3 -> FETCH_HEAD
+2022-12-23T23:56:55.4583281Z ##[command]git checkout --progress --force refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.4589902Z Note: switching to 'refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3'.
+2022-12-23T23:56:55.4590122Z 
+2022-12-23T23:56:55.4590490Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-23T23:56:55.4590879Z changes and commit them, and you can discard any commits you make in this
+2022-12-23T23:56:55.4591240Z state without impacting any branches by switching back to a branch.
+2022-12-23T23:56:55.4591425Z 
+2022-12-23T23:56:55.4591694Z If you want to create a new branch to retain commits you create, you may
+2022-12-23T23:56:55.4592120Z do so (now or later) by using -c with the switch command. Example:
+2022-12-23T23:56:55.4592284Z 
+2022-12-23T23:56:55.4592561Z   git switch -c <new-branch-name>
+2022-12-23T23:56:55.4592682Z 
+2022-12-23T23:56:55.4592890Z Or undo this operation with:
+2022-12-23T23:56:55.4593007Z 
+2022-12-23T23:56:55.4593237Z   git switch -
+2022-12-23T23:56:55.4593332Z 
+2022-12-23T23:56:55.4593612Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-23T23:56:55.4593791Z 
+2022-12-23T23:56:55.4594057Z HEAD is now at b73f01a Set up CI with Azure Pipelines
+2022-12-23T23:56:55.4644015Z ##[section]Finishing: Checkout jwtWebApi@master to s
+2022-12-23T23:56:56.6168719Z ##[section]Starting: Run a one-line script
+2022-12-23T23:56:56.6175650Z ==============================================================================
+2022-12-23T23:56:56.6175893Z Task         : Command line
+2022-12-23T23:56:56.6176146Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:56:56.6176404Z Version      : 2.212.0
+2022-12-23T23:56:56.6176580Z Author       : Microsoft Corporation
+2022-12-23T23:56:56.6176841Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:56:56.6177148Z ==============================================================================
+2022-12-23T23:56:56.9462563Z Generating script.
+2022-12-23T23:56:56.9472430Z Script contents:
+2022-12-23T23:56:56.9476199Z echo Hello, world!
+2022-12-23T23:56:56.9476498Z ========================== Starting Command Output ===========================
+2022-12-23T23:56:56.9500840Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/bd557119-cfc3-4dff-a77a-c2e8f655fc50.sh
+2022-12-23T23:56:56.9549590Z Hello, world!
+2022-12-23T23:56:56.9636716Z ##[section]Finishing: Run a one-line script
+2022-12-23T23:56:57.3350117Z ##[section]Starting: Run a multi-line script
+2022-12-23T23:56:57.3356499Z ==============================================================================
+2022-12-23T23:56:57.3356744Z Task         : Command line
+2022-12-23T23:56:57.3356997Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:56:57.3357246Z Version      : 2.212.0
+2022-12-23T23:56:57.3357419Z Author       : Microsoft Corporation
+2022-12-23T23:56:57.3357679Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:56:57.3357989Z ==============================================================================
+2022-12-23T23:56:57.4665141Z Generating script.
+2022-12-23T23:56:57.4673565Z ========================== Starting Command Output ===========================
+2022-12-23T23:56:57.4696335Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/656010c0-f7ba-4422-9e04-893b21c2754e.sh
+2022-12-23T23:56:57.4745392Z Add other tasks to build, test, and deploy your project.
+2022-12-23T23:56:57.4745768Z See https://aka.ms/yaml
+2022-12-23T23:56:57.4817716Z ##[section]Finishing: Run a multi-line script
+2022-12-23T23:56:57.8926544Z ##[section]Starting: Checkout jwtWebApi@master to s
+2022-12-23T23:56:57.8932834Z ==============================================================================
+2022-12-23T23:56:57.8933083Z Task         : Get sources
+2022-12-23T23:56:57.8933329Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:56:57.8933565Z Version      : 1.0.0
+2022-12-23T23:56:57.8933723Z Author       : Microsoft
+2022-12-23T23:56:57.8933960Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:56:57.8934241Z ==============================================================================
+2022-12-23T23:56:58.2279293Z Cleaning any cached credential from repository: jwtWebApi (Git)
+2022-12-23T23:56:58.2410640Z ##[section]Finishing: Checkout jwtWebApi@master to s
+2022-12-23T23:56:58.9144677Z ##[section]Starting: Finalize Job
+2022-12-23T23:56:58.9173072Z Cleaning up task key
+2022-12-23T23:56:58.9174484Z Start cleaning up orphan processes.
+2022-12-23T23:56:58.9439970Z ##[section]Finishing: Finalize Job
+2022-12-23T23:56:58.9478545Z ##[section]Finishing: Job

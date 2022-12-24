@@ -1,0 +1,64 @@
+2022-12-23T23:56:54.3684706Z ##[section]Starting: Checkout jwtWebApi@master to s
+2022-12-23T23:56:54.3895303Z ==============================================================================
+2022-12-23T23:56:54.3895883Z Task         : Get sources
+2022-12-23T23:56:54.3896593Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:56:54.3896851Z Version      : 1.0.0
+2022-12-23T23:56:54.3897131Z Author       : Microsoft
+2022-12-23T23:56:54.3897602Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:56:54.3897912Z ==============================================================================
+2022-12-23T23:56:55.3425061Z Syncing repository: jwtWebApi (Git)
+2022-12-23T23:56:55.3431894Z ##[command]git version
+2022-12-23T23:56:55.3438530Z git version 2.38.2
+2022-12-23T23:56:55.3439510Z ##[command]git lfs version
+2022-12-23T23:56:55.3446283Z git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
+2022-12-23T23:56:55.3448726Z ##[command]git init "/home/vsts/work/1/s"
+2022-12-23T23:56:55.3454299Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-12-23T23:56:55.3454719Z hint: is subject to change. To configure the initial branch name to use in all
+2022-12-23T23:56:55.3455096Z hint: of your new repositories, which will suppress this warning, call:
+2022-12-23T23:56:55.3455378Z hint: 
+2022-12-23T23:56:55.3455698Z hint: 	git config --global init.defaultBranch <name>
+2022-12-23T23:56:55.3455955Z hint: 
+2022-12-23T23:56:55.3456298Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-12-23T23:56:55.3456758Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-12-23T23:56:55.3457048Z hint: 
+2022-12-23T23:56:55.3457311Z hint: 	git branch -m <name>
+2022-12-23T23:56:55.3457937Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2022-12-23T23:56:55.3459691Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.3471028Z ##[command]git config gc.auto 0
+2022-12-23T23:56:55.3478486Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi.extraheader
+2022-12-23T23:56:55.3486516Z ##[command]git config --get-all http.extraheader
+2022-12-23T23:56:55.3493880Z ##[command]git config --get-regexp .*extraheader
+2022-12-23T23:56:55.3500914Z ##[command]git config --get-all http.proxy
+2022-12-23T23:56:55.3507862Z ##[command]git config http.version HTTP/1.1
+2022-12-23T23:56:55.3517095Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +b73f01a8e5def98d01df8f99cc21a4e513ef00c3:refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.3523194Z remote: Azure Repos        
+2022-12-23T23:56:55.3523422Z remote: 
+2022-12-23T23:56:55.3523682Z remote: Found 18 objects to send. (0 ms)        
+2022-12-23T23:56:55.3524351Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.3524932Z  * [new ref]         b73f01a8e5def98d01df8f99cc21a4e513ef00c3 -> origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.3917278Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.4257606Z remote: Azure Repos        
+2022-12-23T23:56:55.4259616Z remote: 
+2022-12-23T23:56:55.4274537Z remote: Found 0 objects to send. (0 ms)        
+2022-12-23T23:56:55.4274953Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/jwtWebApi
+2022-12-23T23:56:55.4275685Z  * branch            b73f01a8e5def98d01df8f99cc21a4e513ef00c3 -> FETCH_HEAD
+2022-12-23T23:56:55.4583236Z ##[command]git checkout --progress --force refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3
+2022-12-23T23:56:55.4589603Z Note: switching to 'refs/remotes/origin/b73f01a8e5def98d01df8f99cc21a4e513ef00c3'.
+2022-12-23T23:56:55.4590113Z 
+2022-12-23T23:56:55.4590483Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-23T23:56:55.4590873Z changes and commit them, and you can discard any commits you make in this
+2022-12-23T23:56:55.4591232Z state without impacting any branches by switching back to a branch.
+2022-12-23T23:56:55.4591418Z 
+2022-12-23T23:56:55.4591688Z If you want to create a new branch to retain commits you create, you may
+2022-12-23T23:56:55.4592113Z do so (now or later) by using -c with the switch command. Example:
+2022-12-23T23:56:55.4592279Z 
+2022-12-23T23:56:55.4592554Z   git switch -c <new-branch-name>
+2022-12-23T23:56:55.4592677Z 
+2022-12-23T23:56:55.4592884Z Or undo this operation with:
+2022-12-23T23:56:55.4593001Z 
+2022-12-23T23:56:55.4593230Z   git switch -
+2022-12-23T23:56:55.4593327Z 
+2022-12-23T23:56:55.4593605Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-23T23:56:55.4593786Z 
+2022-12-23T23:56:55.4594042Z HEAD is now at b73f01a Set up CI with Azure Pipelines
+2022-12-23T23:56:55.4643991Z ##[section]Finishing: Checkout jwtWebApi@master to s

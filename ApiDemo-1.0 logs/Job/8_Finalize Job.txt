@@ -1,0 +1,6 @@
+2022-12-23T23:42:49.0496217Z ##[section]Starting: Finalize Job
+2022-12-23T23:42:49.0545125Z Cleaning up task key
+2022-12-23T23:42:49.0547286Z Start cleaning up orphan processes.
+2022-12-23T23:42:49.0662942Z Terminate orphan process: pid (6320) (VBCSCompiler)
+2022-12-23T23:42:49.0698161Z Terminate orphan process: pid (3664) (conhost)
+2022-12-23T23:42:49.0804316Z ##[section]Finishing: Finalize Job

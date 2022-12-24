@@ -1,0 +1,31 @@
+2022-12-23T23:42:45.4563428Z ##[section]Starting: VSTest
+2022-12-23T23:42:45.4780770Z ==============================================================================
+2022-12-23T23:42:45.4781050Z Task         : Visual Studio Test
+2022-12-23T23:42:45.4781653Z Description  : Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test (VsTest) runner. Test frameworks that have a Visual Studio test adapter such as MsTest, xUnit, NUnit, Chutzpah (for JavaScript tests using QUnit, Mocha and Jasmine), etc. can be run. Tests can be distributed on multiple agents using this task (version 2).
+2022-12-23T23:42:45.4782279Z Version      : 2.210.0
+2022-12-23T23:42:45.4782447Z Author       : Microsoft Corporation
+2022-12-23T23:42:45.4782692Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/test/vstest
+2022-12-23T23:42:45.4782979Z ==============================================================================
+2022-12-23T23:42:46.8508919Z SystemVssConnection exists true
+2022-12-23T23:42:46.9379022Z SystemVssConnection exists true
+2022-12-23T23:42:47.0934670Z Running tests using vstest.console.exe runner.
+2022-12-23T23:42:47.0935224Z ======================================================
+2022-12-23T23:42:47.0936538Z Test selector : Test assemblies
+2022-12-23T23:42:47.0937452Z Test filter criteria : null
+2022-12-23T23:42:47.0938317Z Search folder : D:\a\1\s
+2022-12-23T23:42:47.1357699Z Action when minimum tests threshold not met : donothing
+2022-12-23T23:42:47.1358017Z Minimum tests expected to be run: 0
+2022-12-23T23:42:47.1358842Z VisualStudio version selected for test execution : latest
+2022-12-23T23:42:47.1361463Z Attempting to find vstest.console from a visual studio installation with version [17.0,18.0).
+2022-12-23T23:42:47.1746718Z Run in parallel : false
+2022-12-23T23:42:47.1747592Z Run in isolation : false
+2022-12-23T23:42:47.1748679Z Path to custom adapters : null
+2022-12-23T23:42:47.1750757Z Other console options : null
+2022-12-23T23:42:47.1755925Z Code coverage enabled : false
+2022-12-23T23:42:47.1759814Z Diagnostics enabled : false
+2022-12-23T23:42:47.1826237Z SystemVssConnection exists true
+2022-12-23T23:42:47.1882964Z Run the tests locally using vstest.console.exe
+2022-12-23T23:42:47.1883395Z ========================================================
+2022-12-23T23:42:47.1941259Z Source filter: **\*test*.dll,!**\*TestAdapter.dll,!**\obj\**
+2022-12-23T23:42:47.3582200Z ##[warning]No test sources found matching the given filter '**\*test*.dll,!**\*TestAdapter.dll,!**\obj\**'
+2022-12-23T23:42:47.3596251Z ##[section]Finishing: VSTest

@@ -1,0 +1,139 @@
+2022-12-23T23:26:23.3799405Z ##[section]Starting: Job
+2022-12-23T23:26:23.6526128Z ##[section]Starting: Initialize job
+2022-12-23T23:26:23.6527510Z Agent name: 'Hosted Agent'
+2022-12-23T23:26:23.6527936Z Agent machine name: 'fv-az360-223'
+2022-12-23T23:26:23.6528141Z Current agent version: '2.213.2'
+2022-12-23T23:26:23.6562492Z ##[group]Operating System
+2022-12-23T23:26:23.6562700Z Ubuntu
+2022-12-23T23:26:23.6562820Z 22.04.1
+2022-12-23T23:26:23.6562931Z LTS
+2022-12-23T23:26:23.6563071Z ##[endgroup]
+2022-12-23T23:26:23.6563211Z ##[group]Runner Image
+2022-12-23T23:26:23.6563371Z Image: ubuntu-22.04
+2022-12-23T23:26:23.6563521Z Version: 20221212.1
+2022-12-23T23:26:23.6564118Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20221212.1/images/linux/Ubuntu2204-Readme.md
+2022-12-23T23:26:23.6564533Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20221212.1
+2022-12-23T23:26:23.6564777Z ##[endgroup]
+2022-12-23T23:26:23.6564933Z ##[group]Runner Image Provisioner
+2022-12-23T23:26:23.6565233Z 2.0.91.1
+2022-12-23T23:26:23.6565379Z ##[endgroup]
+2022-12-23T23:26:23.6566263Z Current image version: '20221212.1'
+2022-12-23T23:26:23.6568199Z Agent running as: 'vsts'
+2022-12-23T23:26:23.6608852Z Prepare build directory.
+2022-12-23T23:26:23.6848916Z Set build variables.
+2022-12-23T23:26:23.6877565Z Download all required tasks.
+2022-12-23T23:26:23.6981738Z Downloading task: CmdLine (2.212.0)
+2022-12-23T23:26:24.5404802Z Checking job knob settings.
+2022-12-23T23:26:24.5413294Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2022-12-23T23:26:24.5414652Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-12-23T23:26:24.5416382Z Finished checking job knob settings.
+2022-12-23T23:26:24.5701368Z Start tracking orphan processes.
+2022-12-23T23:26:24.5924759Z ##[section]Finishing: Initialize job
+2022-12-23T23:26:24.6169713Z ##[section]Starting: Checkout TodoAPI@master to s
+2022-12-23T23:26:24.6378313Z ==============================================================================
+2022-12-23T23:26:24.6378893Z Task         : Get sources
+2022-12-23T23:26:24.6379300Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:26:24.6379559Z Version      : 1.0.0
+2022-12-23T23:26:24.6379852Z Author       : Microsoft
+2022-12-23T23:26:24.6380356Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:26:24.6380672Z ==============================================================================
+2022-12-23T23:26:25.0907970Z Syncing repository: TodoAPI (Git)
+2022-12-23T23:26:25.1444855Z ##[command]git version
+2022-12-23T23:26:25.1789891Z git version 2.38.2
+2022-12-23T23:26:25.1809491Z ##[command]git lfs version
+2022-12-23T23:26:25.2475044Z git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
+2022-12-23T23:26:25.8766233Z ##[command]git init "/home/vsts/work/1/s"
+2022-12-23T23:26:25.8859397Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-12-23T23:26:25.8859972Z hint: is subject to change. To configure the initial branch name to use in all
+2022-12-23T23:26:25.8860475Z hint: of your new repositories, which will suppress this warning, call:
+2022-12-23T23:26:25.8860861Z hint: 
+2022-12-23T23:26:25.8861247Z hint: 	git config --global init.defaultBranch <name>
+2022-12-23T23:26:25.8861602Z hint: 
+2022-12-23T23:26:25.8862086Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-12-23T23:26:25.8862681Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-12-23T23:26:25.8863077Z hint: 
+2022-12-23T23:26:25.8863452Z hint: 	git branch -m <name>
+2022-12-23T23:26:25.8864758Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2022-12-23T23:26:25.8866456Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:25.8880922Z ##[command]git config gc.auto 0
+2022-12-23T23:26:25.8891349Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI.extraheader
+2022-12-23T23:26:25.8901408Z ##[command]git config --get-all http.extraheader
+2022-12-23T23:26:25.8910936Z ##[command]git config --get-regexp .*extraheader
+2022-12-23T23:26:25.8920462Z ##[command]git config --get-all http.proxy
+2022-12-23T23:26:25.8930172Z ##[command]git config http.version HTTP/1.1
+2022-12-23T23:26:25.8942602Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5:refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:25.8950334Z remote: Azure Repos        
+2022-12-23T23:26:25.8950663Z remote: 
+2022-12-23T23:26:25.8951016Z remote: Found 14 objects to send. (0 ms)        
+2022-12-23T23:26:25.8951492Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:25.8952191Z  * [new ref]         a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5 -> origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.5252373Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.5784587Z remote: Azure Repos        
+2022-12-23T23:26:27.5784907Z remote: 
+2022-12-23T23:26:27.5785205Z remote: Found 0 objects to send. (0 ms)        
+2022-12-23T23:26:27.5785597Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:27.5786191Z  * branch            a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5 -> FETCH_HEAD
+2022-12-23T23:26:27.6162959Z ##[command]git checkout --progress --force refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.6204576Z Note: switching to 'refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5'.
+2022-12-23T23:26:27.6204851Z 
+2022-12-23T23:26:27.6205318Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-23T23:26:27.6205783Z changes and commit them, and you can discard any commits you make in this
+2022-12-23T23:26:27.6206237Z state without impacting any branches by switching back to a branch.
+2022-12-23T23:26:27.6206438Z 
+2022-12-23T23:26:27.6206760Z If you want to create a new branch to retain commits you create, you may
+2022-12-23T23:26:27.6207277Z do so (now or later) by using -c with the switch command. Example:
+2022-12-23T23:26:27.6207492Z 
+2022-12-23T23:26:27.6207810Z   git switch -c <new-branch-name>
+2022-12-23T23:26:27.6207953Z 
+2022-12-23T23:26:27.6208203Z Or undo this operation with:
+2022-12-23T23:26:27.6208354Z 
+2022-12-23T23:26:27.6208624Z   git switch -
+2022-12-23T23:26:27.6208736Z 
+2022-12-23T23:26:27.6209068Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-23T23:26:27.6209301Z 
+2022-12-23T23:26:27.6209599Z HEAD is now at a8483f8 Set up CI with Azure Pipelines
+2022-12-23T23:26:27.6262028Z ##[section]Finishing: Checkout TodoAPI@master to s
+2022-12-23T23:26:28.8291092Z ##[section]Starting: Run a one-line script
+2022-12-23T23:26:28.8299279Z ==============================================================================
+2022-12-23T23:26:28.8299616Z Task         : Command line
+2022-12-23T23:26:28.8299945Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:26:28.8300260Z Version      : 2.212.0
+2022-12-23T23:26:28.8300496Z Author       : Microsoft Corporation
+2022-12-23T23:26:28.8300848Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:26:28.8301265Z ==============================================================================
+2022-12-23T23:26:29.2199381Z Generating script.
+2022-12-23T23:26:29.2209184Z Script contents:
+2022-12-23T23:26:29.2209456Z echo Hello, world!
+2022-12-23T23:26:29.2209795Z ========================== Starting Command Output ===========================
+2022-12-23T23:26:29.2231327Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/14290410-f600-461f-be73-9073522844ad.sh
+2022-12-23T23:26:29.2279586Z Hello, world!
+2022-12-23T23:26:29.2360700Z ##[section]Finishing: Run a one-line script
+2022-12-23T23:26:30.0214244Z ##[section]Starting: Run a multi-line script
+2022-12-23T23:26:30.0226497Z ==============================================================================
+2022-12-23T23:26:30.0226994Z Task         : Command line
+2022-12-23T23:26:30.0227487Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:26:30.0227960Z Version      : 2.212.0
+2022-12-23T23:26:30.0228316Z Author       : Microsoft Corporation
+2022-12-23T23:26:30.0228801Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:26:30.0229313Z ==============================================================================
+2022-12-23T23:26:30.1701827Z Generating script.
+2022-12-23T23:26:30.1710480Z ========================== Starting Command Output ===========================
+2022-12-23T23:26:30.1734849Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/df265a3a-a1d4-4a44-9150-4047a4521040.sh
+2022-12-23T23:26:30.1786278Z Add other tasks to build, test, and deploy your project.
+2022-12-23T23:26:30.1786806Z See https://aka.ms/yaml
+2022-12-23T23:26:30.1860437Z ##[section]Finishing: Run a multi-line script
+2022-12-23T23:26:30.7352390Z ##[section]Starting: Checkout TodoAPI@master to s
+2022-12-23T23:26:30.7359084Z ==============================================================================
+2022-12-23T23:26:30.7359395Z Task         : Get sources
+2022-12-23T23:26:30.7359696Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:26:30.7359981Z Version      : 1.0.0
+2022-12-23T23:26:30.7360163Z Author       : Microsoft
+2022-12-23T23:26:30.7360471Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:26:30.7360834Z ==============================================================================
+2022-12-23T23:26:31.0599777Z Cleaning any cached credential from repository: TodoAPI (Git)
+2022-12-23T23:26:31.0719464Z ##[section]Finishing: Checkout TodoAPI@master to s
+2022-12-23T23:26:31.7922567Z ##[section]Starting: Finalize Job
+2022-12-23T23:26:31.7948690Z Cleaning up task key
+2022-12-23T23:26:31.7950020Z Start cleaning up orphan processes.
+2022-12-23T23:26:31.8217591Z ##[section]Finishing: Finalize Job
+2022-12-23T23:26:31.8252979Z ##[section]Finishing: Job

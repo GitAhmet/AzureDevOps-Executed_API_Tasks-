@@ -1,0 +1,33 @@
+2022-12-23T23:42:10.8998006Z ##[section]Starting: Initialize job
+2022-12-23T23:42:10.8999410Z Agent name: 'Hosted Agent'
+2022-12-23T23:42:10.8999807Z Agent machine name: 'WIN-3F7M7VDL599'
+2022-12-23T23:42:10.9000004Z Current agent version: '2.213.2'
+2022-12-23T23:42:10.9071602Z ##[group]Operating System
+2022-12-23T23:42:10.9072429Z Microsoft Windows Server 2022
+2022-12-23T23:42:10.9072600Z 10.0.20348
+2022-12-23T23:42:10.9072731Z Datacenter
+2022-12-23T23:42:10.9072856Z ##[endgroup]
+2022-12-23T23:42:10.9072988Z ##[group]Runner Image
+2022-12-23T23:42:10.9073143Z Image: windows-2022
+2022-12-23T23:42:10.9073297Z Version: 20221215.2
+2022-12-23T23:42:10.9073577Z Included Software: https://github.com/actions/runner-images/blob/win22/20221215.2/images/win/Windows2022-Readme.md
+2022-12-23T23:42:10.9073949Z Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20221215.2
+2022-12-23T23:42:10.9074186Z ##[endgroup]
+2022-12-23T23:42:10.9074332Z ##[group]Runner Image Provisioner
+2022-12-23T23:42:10.9074667Z 2.0.91.1
+2022-12-23T23:42:10.9074790Z ##[endgroup]
+2022-12-23T23:42:10.9075639Z Current image version: '20221215.2'
+2022-12-23T23:42:10.9083743Z Agent running as: 'VssAdministrator'
+2022-12-23T23:42:10.9144277Z Prepare build directory.
+2022-12-23T23:42:10.9506516Z Set build variables.
+2022-12-23T23:42:10.9545647Z Download all required tasks.
+2022-12-23T23:42:10.9678365Z Downloading task: NuGetToolInstaller (1.208.1)
+2022-12-23T23:42:11.7445428Z Downloading task: NuGetCommand (2.211.0)
+2022-12-23T23:42:15.2721971Z Downloading task: VSBuild (1.212.0)
+2022-12-23T23:42:15.6669108Z Downloading task: VSTest (2.210.0)
+2022-12-23T23:42:17.5841742Z Checking job knob settings.
+2022-12-23T23:42:17.5850953Z    Knob: AgentToolsDirectory = C:\hostedtoolcache\windows Source: ${AGENT_TOOLSDIRECTORY} 
+2022-12-23T23:42:17.5852130Z    Knob: AgentPerflog = C:\agents\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-12-23T23:42:17.5853453Z Finished checking job knob settings.
+2022-12-23T23:42:17.6174437Z Start tracking orphan processes.
+2022-12-23T23:42:17.6241029Z ##[section]Finishing: Initialize job

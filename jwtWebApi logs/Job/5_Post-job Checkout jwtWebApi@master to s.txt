@@ -1,0 +1,10 @@
+2022-12-23T23:56:57.8926474Z ##[section]Starting: Checkout jwtWebApi@master to s
+2022-12-23T23:56:57.8932817Z ==============================================================================
+2022-12-23T23:56:57.8933077Z Task         : Get sources
+2022-12-23T23:56:57.8933323Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:56:57.8933560Z Version      : 1.0.0
+2022-12-23T23:56:57.8933708Z Author       : Microsoft
+2022-12-23T23:56:57.8933954Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:56:57.8934236Z ==============================================================================
+2022-12-23T23:56:58.2279072Z Cleaning any cached credential from repository: jwtWebApi (Git)
+2022-12-23T23:56:58.2410575Z ##[section]Finishing: Checkout jwtWebApi@master to s

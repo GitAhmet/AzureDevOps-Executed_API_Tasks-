@@ -1,0 +1,55 @@
+2022-12-23T23:42:17.7926911Z ##[section]Starting: Checkout ApiDemo-1.0@main to s
+2022-12-23T23:42:17.8900936Z ==============================================================================
+2022-12-23T23:42:17.8901440Z Task         : Get sources
+2022-12-23T23:42:17.8901797Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:42:17.8902028Z Version      : 1.0.0
+2022-12-23T23:42:17.8902561Z Author       : Microsoft
+2022-12-23T23:42:17.8903032Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:42:17.8903316Z ==============================================================================
+2022-12-23T23:42:18.4670705Z Syncing repository: ApiDemo-1.0 (Git)
+2022-12-23T23:42:18.4683988Z Prepending Path environment variable with directory containing 'git.exe'.
+2022-12-23T23:42:18.4696183Z ##[command]git version
+2022-12-23T23:42:18.6020611Z git version 2.38.1.windows.1
+2022-12-23T23:42:18.6041540Z ##[command]git lfs version
+2022-12-23T23:42:18.7819596Z git-lfs/2.13.3 (GitHub; windows amd64; go 1.16.2; git a5e65851)
+2022-12-23T23:42:18.8052650Z ##[command]git init "D:\a\1\s"
+2022-12-23T23:42:18.8683058Z Initialized empty Git repository in D:/a/1/s/.git/
+2022-12-23T23:42:18.8733739Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/ApiDemo-1.0
+2022-12-23T23:42:18.9265536Z ##[command]git config gc.auto 0
+2022-12-23T23:42:18.9801287Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/ApiDemo-1.0.extraheader
+2022-12-23T23:42:19.0450093Z ##[command]git config --get-all http.extraheader
+2022-12-23T23:42:19.1758938Z ##[command]git config --get-regexp .*extraheader
+2022-12-23T23:42:19.1772457Z ##[command]git config --get-all http.proxy
+2022-12-23T23:42:19.2162210Z ##[command]git config http.version HTTP/1.1
+2022-12-23T23:42:19.2838990Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +976c8b2e61dd2d02d18c31e06cfc5b34cfccd193:refs/remotes/origin/976c8b2e61dd2d02d18c31e06cfc5b34cfccd193
+2022-12-23T23:42:19.7960505Z remote: Azure Repos        
+2022-12-23T23:42:19.9214653Z remote: 
+2022-12-23T23:42:19.9215674Z remote: Found 83 objects to send. (127 ms)        
+2022-12-23T23:42:20.6610239Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/ApiDemo-1.0
+2022-12-23T23:42:20.6613128Z  * [new ref]         976c8b2e61dd2d02d18c31e06cfc5b34cfccd193 -> origin/976c8b2e61dd2d02d18c31e06cfc5b34cfccd193
+2022-12-23T23:42:20.7334991Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +976c8b2e61dd2d02d18c31e06cfc5b34cfccd193
+2022-12-23T23:42:20.8791192Z remote: Azure Repos        
+2022-12-23T23:42:21.0208517Z remote: 
+2022-12-23T23:42:21.0210213Z remote: Found 0 objects to send. (141 ms)        
+2022-12-23T23:42:21.0859904Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/ApiDemo-1.0
+2022-12-23T23:42:21.0862052Z  * branch            976c8b2e61dd2d02d18c31e06cfc5b34cfccd193 -> FETCH_HEAD
+2022-12-23T23:42:21.1682603Z ##[command]git checkout --progress --force refs/remotes/origin/976c8b2e61dd2d02d18c31e06cfc5b34cfccd193
+2022-12-23T23:42:21.2786054Z Note: switching to 'refs/remotes/origin/976c8b2e61dd2d02d18c31e06cfc5b34cfccd193'.
+2022-12-23T23:42:21.2786636Z 
+2022-12-23T23:42:21.2787060Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-23T23:42:21.2787656Z changes and commit them, and you can discard any commits you make in this
+2022-12-23T23:42:21.2788209Z state without impacting any branches by switching back to a branch.
+2022-12-23T23:42:21.2788462Z 
+2022-12-23T23:42:21.2788849Z If you want to create a new branch to retain commits you create, you may
+2022-12-23T23:42:21.2789403Z do so (now or later) by using -c with the switch command. Example:
+2022-12-23T23:42:21.2789641Z 
+2022-12-23T23:42:21.2791482Z   git switch -c <new-branch-name>
+2022-12-23T23:42:21.2791599Z 
+2022-12-23T23:42:21.2791782Z Or undo this operation with:
+2022-12-23T23:42:21.2791889Z 
+2022-12-23T23:42:21.2792061Z   git switch -
+2022-12-23T23:42:21.2792146Z 
+2022-12-23T23:42:21.2792395Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-23T23:42:21.2792565Z 
+2022-12-23T23:42:21.2792793Z HEAD is now at 976c8b2 Set up CI with Azure Pipelines
+2022-12-23T23:42:21.3006607Z ##[section]Finishing: Checkout ApiDemo-1.0@main to s

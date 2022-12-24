@@ -1,0 +1,10 @@
+2022-12-23T23:42:47.8413110Z ##[section]Starting: Checkout ApiDemo-1.0@main to s
+2022-12-23T23:42:47.8583350Z ==============================================================================
+2022-12-23T23:42:47.8583591Z Task         : Get sources
+2022-12-23T23:42:47.8583842Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:42:47.8584064Z Version      : 1.0.0
+2022-12-23T23:42:47.8584209Z Author       : Microsoft
+2022-12-23T23:42:47.8584456Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:42:47.8584728Z ==============================================================================
+2022-12-23T23:42:48.3001996Z Cleaning any cached credential from repository: ApiDemo-1.0 (Git)
+2022-12-23T23:42:48.3119193Z ##[section]Finishing: Checkout ApiDemo-1.0@main to s

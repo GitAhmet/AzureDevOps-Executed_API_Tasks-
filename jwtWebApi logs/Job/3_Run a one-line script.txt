@@ -1,0 +1,15 @@
+2022-12-23T23:56:56.6168696Z ##[section]Starting: Run a one-line script
+2022-12-23T23:56:56.6175631Z ==============================================================================
+2022-12-23T23:56:56.6175886Z Task         : Command line
+2022-12-23T23:56:56.6176140Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:56:56.6176398Z Version      : 2.212.0
+2022-12-23T23:56:56.6176573Z Author       : Microsoft Corporation
+2022-12-23T23:56:56.6176836Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:56:56.6177142Z ==============================================================================
+2022-12-23T23:56:56.9462194Z Generating script.
+2022-12-23T23:56:56.9472414Z Script contents:
+2022-12-23T23:56:56.9476190Z echo Hello, world!
+2022-12-23T23:56:56.9476491Z ========================== Starting Command Output ===========================
+2022-12-23T23:56:56.9500699Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/bd557119-cfc3-4dff-a77a-c2e8f655fc50.sh
+2022-12-23T23:56:56.9549553Z Hello, world!
+2022-12-23T23:56:56.9636697Z ##[section]Finishing: Run a one-line script

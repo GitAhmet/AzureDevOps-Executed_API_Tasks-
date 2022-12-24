@@ -1,0 +1,10 @@
+2022-12-23T23:26:30.7352335Z ##[section]Starting: Checkout TodoAPI@master to s
+2022-12-23T23:26:30.7359071Z ==============================================================================
+2022-12-23T23:26:30.7359375Z Task         : Get sources
+2022-12-23T23:26:30.7359690Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:26:30.7359977Z Version      : 1.0.0
+2022-12-23T23:26:30.7360158Z Author       : Microsoft
+2022-12-23T23:26:30.7360466Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:26:30.7360829Z ==============================================================================
+2022-12-23T23:26:31.0599706Z Cleaning any cached credential from repository: TodoAPI (Git)
+2022-12-23T23:26:31.0719423Z ##[section]Finishing: Checkout TodoAPI@master to s

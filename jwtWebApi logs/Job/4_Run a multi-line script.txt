@@ -1,0 +1,14 @@
+2022-12-23T23:56:57.3350096Z ##[section]Starting: Run a multi-line script
+2022-12-23T23:56:57.3356481Z ==============================================================================
+2022-12-23T23:56:57.3356738Z Task         : Command line
+2022-12-23T23:56:57.3356990Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2022-12-23T23:56:57.3357240Z Version      : 2.212.0
+2022-12-23T23:56:57.3357413Z Author       : Microsoft Corporation
+2022-12-23T23:56:57.3357673Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2022-12-23T23:56:57.3357975Z ==============================================================================
+2022-12-23T23:56:57.4665065Z Generating script.
+2022-12-23T23:56:57.4673548Z ========================== Starting Command Output ===========================
+2022-12-23T23:56:57.4696311Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/656010c0-f7ba-4422-9e04-893b21c2754e.sh
+2022-12-23T23:56:57.4745285Z Add other tasks to build, test, and deploy your project.
+2022-12-23T23:56:57.4745761Z See https://aka.ms/yaml
+2022-12-23T23:56:57.4817695Z ##[section]Finishing: Run a multi-line script

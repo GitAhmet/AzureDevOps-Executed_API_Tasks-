@@ -1,0 +1,64 @@
+2022-12-23T23:26:24.6169691Z ##[section]Starting: Checkout TodoAPI@master to s
+2022-12-23T23:26:24.6378276Z ==============================================================================
+2022-12-23T23:26:24.6378859Z Task         : Get sources
+2022-12-23T23:26:24.6379289Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-23T23:26:24.6379553Z Version      : 1.0.0
+2022-12-23T23:26:24.6379843Z Author       : Microsoft
+2022-12-23T23:26:24.6380346Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-23T23:26:24.6380665Z ==============================================================================
+2022-12-23T23:26:25.0907856Z Syncing repository: TodoAPI (Git)
+2022-12-23T23:26:25.1444814Z ##[command]git version
+2022-12-23T23:26:25.1789853Z git version 2.38.2
+2022-12-23T23:26:25.1809468Z ##[command]git lfs version
+2022-12-23T23:26:25.2474989Z git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
+2022-12-23T23:26:25.8766076Z ##[command]git init "/home/vsts/work/1/s"
+2022-12-23T23:26:25.8859356Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-12-23T23:26:25.8859962Z hint: is subject to change. To configure the initial branch name to use in all
+2022-12-23T23:26:25.8860468Z hint: of your new repositories, which will suppress this warning, call:
+2022-12-23T23:26:25.8860854Z hint: 
+2022-12-23T23:26:25.8861238Z hint: 	git config --global init.defaultBranch <name>
+2022-12-23T23:26:25.8861595Z hint: 
+2022-12-23T23:26:25.8862076Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-12-23T23:26:25.8862672Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-12-23T23:26:25.8863071Z hint: 
+2022-12-23T23:26:25.8863443Z hint: 	git branch -m <name>
+2022-12-23T23:26:25.8864747Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2022-12-23T23:26:25.8866433Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:25.8880890Z ##[command]git config gc.auto 0
+2022-12-23T23:26:25.8891328Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI.extraheader
+2022-12-23T23:26:25.8901392Z ##[command]git config --get-all http.extraheader
+2022-12-23T23:26:25.8910923Z ##[command]git config --get-regexp .*extraheader
+2022-12-23T23:26:25.8920449Z ##[command]git config --get-all http.proxy
+2022-12-23T23:26:25.8930156Z ##[command]git config http.version HTTP/1.1
+2022-12-23T23:26:25.8942588Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5:refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:25.8950321Z remote: Azure Repos        
+2022-12-23T23:26:25.8950653Z remote: 
+2022-12-23T23:26:25.8951008Z remote: Found 14 objects to send. (0 ms)        
+2022-12-23T23:26:25.8951461Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:25.8952182Z  * [new ref]         a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5 -> origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.5252309Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.5784542Z remote: Azure Repos        
+2022-12-23T23:26:27.5784885Z remote: 
+2022-12-23T23:26:27.5785199Z remote: Found 0 objects to send. (0 ms)        
+2022-12-23T23:26:27.5785590Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/TodoAPI
+2022-12-23T23:26:27.5786183Z  * branch            a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5 -> FETCH_HEAD
+2022-12-23T23:26:27.6162915Z ##[command]git checkout --progress --force refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5
+2022-12-23T23:26:27.6204275Z Note: switching to 'refs/remotes/origin/a8483f8bd15b91e3a07866a3a9c00f0ed45f99a5'.
+2022-12-23T23:26:27.6204843Z 
+2022-12-23T23:26:27.6205308Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-23T23:26:27.6205775Z changes and commit them, and you can discard any commits you make in this
+2022-12-23T23:26:27.6206229Z state without impacting any branches by switching back to a branch.
+2022-12-23T23:26:27.6206431Z 
+2022-12-23T23:26:27.6206753Z If you want to create a new branch to retain commits you create, you may
+2022-12-23T23:26:27.6207269Z do so (now or later) by using -c with the switch command. Example:
+2022-12-23T23:26:27.6207486Z 
+2022-12-23T23:26:27.6207802Z   git switch -c <new-branch-name>
+2022-12-23T23:26:27.6207948Z 
+2022-12-23T23:26:27.6208196Z Or undo this operation with:
+2022-12-23T23:26:27.6208348Z 
+2022-12-23T23:26:27.6208615Z   git switch -
+2022-12-23T23:26:27.6208729Z 
+2022-12-23T23:26:27.6209060Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-23T23:26:27.6209295Z 
+2022-12-23T23:26:27.6209584Z HEAD is now at a8483f8 Set up CI with Azure Pipelines
+2022-12-23T23:26:27.6261982Z ##[section]Finishing: Checkout TodoAPI@master to s

@@ -1,0 +1,30 @@
+2022-12-23T23:26:23.6526085Z ##[section]Starting: Initialize job
+2022-12-23T23:26:23.6527492Z Agent name: 'Hosted Agent'
+2022-12-23T23:26:23.6527929Z Agent machine name: 'fv-az360-223'
+2022-12-23T23:26:23.6528136Z Current agent version: '2.213.2'
+2022-12-23T23:26:23.6562459Z ##[group]Operating System
+2022-12-23T23:26:23.6562694Z Ubuntu
+2022-12-23T23:26:23.6562815Z 22.04.1
+2022-12-23T23:26:23.6562926Z LTS
+2022-12-23T23:26:23.6563065Z ##[endgroup]
+2022-12-23T23:26:23.6563205Z ##[group]Runner Image
+2022-12-23T23:26:23.6563366Z Image: ubuntu-22.04
+2022-12-23T23:26:23.6563517Z Version: 20221212.1
+2022-12-23T23:26:23.6564110Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20221212.1/images/linux/Ubuntu2204-Readme.md
+2022-12-23T23:26:23.6564528Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20221212.1
+2022-12-23T23:26:23.6564772Z ##[endgroup]
+2022-12-23T23:26:23.6564928Z ##[group]Runner Image Provisioner
+2022-12-23T23:26:23.6565228Z 2.0.91.1
+2022-12-23T23:26:23.6565349Z ##[endgroup]
+2022-12-23T23:26:23.6566250Z Current image version: '20221212.1'
+2022-12-23T23:26:23.6568160Z Agent running as: 'vsts'
+2022-12-23T23:26:23.6608818Z Prepare build directory.
+2022-12-23T23:26:23.6848881Z Set build variables.
+2022-12-23T23:26:23.6877529Z Download all required tasks.
+2022-12-23T23:26:23.6981723Z Downloading task: CmdLine (2.212.0)
+2022-12-23T23:26:24.5404764Z Checking job knob settings.
+2022-12-23T23:26:24.5413263Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2022-12-23T23:26:24.5414643Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-12-23T23:26:24.5416375Z Finished checking job knob settings.
+2022-12-23T23:26:24.5701241Z Start tracking orphan processes.
+2022-12-23T23:26:24.5924741Z ##[section]Finishing: Initialize job

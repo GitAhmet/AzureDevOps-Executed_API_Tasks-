@@ -1,0 +1,132 @@
+2022-12-23T23:42:24.8267718Z ##[section]Starting: NuGetCommand
+2022-12-23T23:42:24.8401397Z ==============================================================================
+2022-12-23T23:42:24.8401644Z Task         : NuGet
+2022-12-23T23:42:24.8402101Z Description  : Restore, pack, or push NuGet packages, or run a NuGet command. Supports NuGet.org and authenticated feeds like Azure Artifacts and MyGet. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
+2022-12-23T23:42:24.8402572Z Version      : 2.211.0
+2022-12-23T23:42:24.8402738Z Author       : Microsoft Corporation
+2022-12-23T23:42:24.8402976Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget
+2022-12-23T23:42:24.8403273Z ==============================================================================
+2022-12-23T23:42:25.8599170Z [command]C:\Windows\system32\chcp.com 65001
+2022-12-23T23:42:25.8708486Z Active code page: 65001
+2022-12-23T23:42:25.9292773Z Detected NuGet version 6.4.0.123 / 6.4.0+da5b9fa1595e212914854a9ff4a18a6759ed4729.da5b9fa1595e212914854a9ff4a18a6759ed4729
+2022-12-23T23:42:25.9368207Z [command]C:\hostedtoolcache\windows\NuGet\6.4.0\x64\nuget.exe sources Add -NonInteractive -Name NuGetOrg -Source https://api.nuget.org/v3/index.json -ConfigFile D:\a\1\Nuget\tempNuGet_13.config
+2022-12-23T23:42:26.7006961Z Package source with Name: NuGetOrg added successfully.
+2022-12-23T23:42:26.7041202Z [command]C:\hostedtoolcache\windows\NuGet\6.4.0\x64\nuget.exe restore D:\a\1\s\ApiDemoApp.sln -Verbosity Detailed -NonInteractive -ConfigFile D:\a\1\Nuget\tempNuGet_13.config
+2022-12-23T23:42:34.3683494Z NuGet Version: 6.4.0.123
+2022-12-23T23:42:34.3684666Z MSBuild auto-detection: using msbuild version '17.4.1.60106' from 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2022-12-23T23:42:34.3685576Z MSBuild P2P timeout [ms]: 120000
+2022-12-23T23:42:34.3687657Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\bin\msbuild.exe "C:\Users\VssAdministrator\AppData\Local\Temp\NuGetScratch\g3wdoqum.ghw.nugetinputs.targets" /t:GenerateRestoreGraphFile /nologo /nr:false /v:q /p:NuGetRestoreTargets="C:\Users\VssAdministrator\AppData\Local\Temp\NuGetScratch\g0q3xwtb.ar4.nugetrestore.targets" /p:RestoreUseCustomAfterTargets="True" /p:DisableCheckingDuplicateNuGetItems="True" /p:RestoreTaskAssemblyFile="C:\hostedtoolcache\windows\NuGet\6.4.0\x64\nuget.exe" /p:RestoreSolutionDirectory="D:\a\1\s\\" /p:RestoreConfigFile="D:\a\1\Nuget\tempNuGet_13.config" /p:SolutionDir="D:\a\1\s\\" /p:SolutionName="ApiDemoApp"
+2022-12-23T23:42:34.3689353Z 
+2022-12-23T23:42:34.3689734Z Running restore with 4 concurrent jobs.
+2022-12-23T23:42:34.3690264Z Reading project file D:\a\1\s\MinimalApiDemo\MinimalApiDemo.csproj.
+2022-12-23T23:42:34.3690810Z Reading project file D:\a\1\s\ApiDemo\ApiDemo.csproj.
+2022-12-23T23:42:34.3691391Z The restore inputs for 'ApiDemo' have changed. Continuing restore.
+2022-12-23T23:42:34.3692023Z The restore inputs for 'MinimalApiDemo' have changed. Continuing restore.
+2022-12-23T23:42:34.3692628Z Restoring packages for D:\a\1\s\MinimalApiDemo\MinimalApiDemo.csproj...
+2022-12-23T23:42:34.3693183Z Restoring packages for D:\a\1\s\ApiDemo\ApiDemo.csproj...
+2022-12-23T23:42:34.3693693Z Restoring packages for .NETCoreApp,Version=v6.0...
+2022-12-23T23:42:34.3694267Z Restoring packages for .NETCoreApp,Version=v6.0...
+2022-12-23T23:42:34.3694925Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json
+2022-12-23T23:42:34.3695668Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json 109ms
+2022-12-23T23:42:34.3696711Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg
+2022-12-23T23:42:34.3697614Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg 3ms
+2022-12-23T23:42:34.3698436Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json
+2022-12-23T23:42:34.3700884Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json
+2022-12-23T23:42:34.3701631Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json
+2022-12-23T23:42:34.3702478Z   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.apidescription.server/index.json
+2022-12-23T23:42:34.3703251Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json 110ms
+2022-12-23T23:42:34.3704202Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg
+2022-12-23T23:42:34.3705315Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg 5ms
+2022-12-23T23:42:34.3706321Z   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.apidescription.server/index.json 120ms
+2022-12-23T23:42:34.3707237Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json 122ms
+2022-12-23T23:42:34.3708108Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json 126ms
+2022-12-23T23:42:34.3709014Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg
+2022-12-23T23:42:34.3709917Z   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg
+2022-12-23T23:42:34.3710891Z   GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg
+2022-12-23T23:42:34.3711632Z   GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json
+2022-12-23T23:42:34.3712541Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg 3ms
+2022-12-23T23:42:34.3713683Z   OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg 5ms
+2022-12-23T23:42:34.3714673Z   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg 5ms
+2022-12-23T23:42:34.3715502Z   OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json 418ms
+2022-12-23T23:42:34.3716208Z   GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg
+2022-12-23T23:42:34.3716917Z   OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg 3ms
+2022-12-23T23:42:34.3717484Z Resolving conflicts for net6.0...
+2022-12-23T23:42:34.3717962Z Acquiring lock for the installation of Microsoft.OpenApi 1.2.3
+2022-12-23T23:42:34.3718501Z Acquired lock for the installation of Microsoft.OpenApi 1.2.3
+2022-12-23T23:42:34.3719083Z Acquiring lock for the installation of Microsoft.Extensions.ApiDescription.Server 3.0.0
+2022-12-23T23:42:34.3719761Z Acquired lock for the installation of Microsoft.Extensions.ApiDescription.Server 3.0.0
+2022-12-23T23:42:34.3720466Z Acquiring lock for the installation of Swashbuckle.AspNetCore.SwaggerUI 6.2.3
+2022-12-23T23:42:34.3721075Z Acquired lock for the installation of Swashbuckle.AspNetCore.SwaggerUI 6.2.3
+2022-12-23T23:42:34.3721763Z Acquiring lock for the installation of Swashbuckle.AspNetCore.SwaggerGen 6.2.3
+2022-12-23T23:42:34.3722408Z Acquired lock for the installation of Swashbuckle.AspNetCore.SwaggerGen 6.2.3
+2022-12-23T23:42:34.3723024Z Acquiring lock for the installation of Swashbuckle.AspNetCore.Swagger 6.2.3
+2022-12-23T23:42:34.3723775Z Acquired lock for the installation of Swashbuckle.AspNetCore.Swagger 6.2.3
+2022-12-23T23:42:34.3724379Z Acquiring lock for the installation of Swashbuckle.AspNetCore 6.2.3
+2022-12-23T23:42:34.3724964Z Acquired lock for the installation of Swashbuckle.AspNetCore 6.2.3
+2022-12-23T23:42:34.3725442Z Resolving conflicts for net6.0...
+2022-12-23T23:42:34.3726559Z Acquiring lock for the installation of Microsoft.OpenApi 1.2.3
+2022-12-23T23:42:34.3727172Z Acquiring lock for the installation of Microsoft.Extensions.ApiDescription.Server 3.0.0
+2022-12-23T23:42:34.3727667Z Acquiring lock for the installation of Swashbuckle.AspNetCore.SwaggerUI 6.2.3
+2022-12-23T23:42:34.3728047Z Acquiring lock for the installation of Swashbuckle.AspNetCore.SwaggerGen 6.2.3
+2022-12-23T23:42:34.3728873Z Acquiring lock for the installation of Swashbuckle.AspNetCore.Swagger 6.2.3
+2022-12-23T23:42:34.3729438Z Acquiring lock for the installation of Swashbuckle.AspNetCore 6.2.3
+2022-12-23T23:42:34.3731427Z PackageSignatureVerificationLog: PackageIdentity: Swashbuckle.AspNetCore.6.2.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3734201Z PackageSignatureVerificationLog: PackageIdentity: Microsoft.Extensions.ApiDescription.Server.3.0.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3735780Z PackageSignatureVerificationLog: PackageIdentity: Microsoft.OpenApi.1.2.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3736841Z Installed Swashbuckle.AspNetCore 6.2.3 from https://api.nuget.org/v3/index.json with content hash cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==.
+2022-12-23T23:42:34.3738420Z Lock not required - Package already installed Swashbuckle.AspNetCore 6.2.3
+2022-12-23T23:42:34.3739854Z PackageSignatureVerificationLog: PackageIdentity: Swashbuckle.AspNetCore.Swagger.6.2.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3741267Z Installed Microsoft.OpenApi 1.2.3 from https://api.nuget.org/v3/index.json with content hash Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==.
+2022-12-23T23:42:34.3742352Z Lock not required - Package already installed Microsoft.OpenApi 1.2.3
+2022-12-23T23:42:34.3743417Z Installed Microsoft.Extensions.ApiDescription.Server 3.0.0 from https://api.nuget.org/v3/index.json with content hash LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==.
+2022-12-23T23:42:34.3744927Z Lock not required - Package already installed Microsoft.Extensions.ApiDescription.Server 3.0.0
+2022-12-23T23:42:34.3745931Z PackageSignatureVerificationLog: PackageIdentity: Swashbuckle.AspNetCore.SwaggerGen.6.2.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3747133Z Installed Swashbuckle.AspNetCore.Swagger 6.2.3 from https://api.nuget.org/v3/index.json with content hash qOF7j1sL0bWm8g/qqHVPCvkO3JlVvUIB8WfC98kSh6BT5y5DAnBNctfac7XR5EZf+eD7/WasvANncTqwZYfmWQ==.
+2022-12-23T23:42:34.3748091Z Lock not required - Package already installed Swashbuckle.AspNetCore.Swagger 6.2.3
+2022-12-23T23:42:34.3749537Z PackageSignatureVerificationLog: PackageIdentity: Swashbuckle.AspNetCore.SwaggerUI.6.2.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+2022-12-23T23:42:34.3750834Z Installed Swashbuckle.AspNetCore.SwaggerGen 6.2.3 from https://api.nuget.org/v3/index.json with content hash +Xq7WdMCCfcXlnbLJVFNgY8ITdP2TRYIlpbt6IKzDw5FwFxdi9lBfNDtcT+/wkKwX70iBBFmXldnnd02/VO72A==.
+2022-12-23T23:42:34.3751915Z Lock not required - Package already installed Swashbuckle.AspNetCore.SwaggerGen 6.2.3
+2022-12-23T23:42:34.3752995Z Installed Swashbuckle.AspNetCore.SwaggerUI 6.2.3 from https://api.nuget.org/v3/index.json with content hash bCRI87uKJVb4G+KURWm8LQrL64St04dEFZcF6gIM67Zc0Sr/N47EO83ybLMYOvfNdO1DCv8xwPcrz9J/VEhQ5g==.
+2022-12-23T23:42:34.3755232Z Lock not required - Package already installed Swashbuckle.AspNetCore.SwaggerUI 6.2.3
+2022-12-23T23:42:34.3755620Z Checking compatibility of packages on net6.0.
+2022-12-23T23:42:34.3755902Z Checking compatibility of packages on net6.0.
+2022-12-23T23:42:34.3756180Z Checking compatibility for ApiDemo 1.0.0 with net6.0.
+2022-12-23T23:42:34.3756483Z Checking compatibility for MinimalApiDemo 1.0.0 with net6.0.
+2022-12-23T23:42:34.3756946Z Checking compatibility for Swashbuckle.AspNetCore 6.2.3 with net6.0.
+2022-12-23T23:42:34.3757399Z Checking compatibility for Swashbuckle.AspNetCore 6.2.3 with net6.0.
+2022-12-23T23:42:34.3758003Z Checking compatibility for Swashbuckle.AspNetCore.Swagger 6.2.3 with net6.0.
+2022-12-23T23:42:34.3758632Z Checking compatibility for Swashbuckle.AspNetCore.SwaggerGen 6.2.3 with net6.0.
+2022-12-23T23:42:34.3759764Z Checking compatibility for Swashbuckle.AspNetCore.SwaggerUI 6.2.3 with net6.0.
+2022-12-23T23:42:34.3760456Z Checking compatibility for Microsoft.Extensions.ApiDescription.Server 3.0.0 with net6.0.
+2022-12-23T23:42:34.3760832Z Checking compatibility for Microsoft.OpenApi 1.2.3 with net6.0.
+2022-12-23T23:42:34.3761436Z Checking compatibility for Swashbuckle.AspNetCore.Swagger 6.2.3 with net6.0.
+2022-12-23T23:42:34.3761835Z Checking compatibility for Swashbuckle.AspNetCore.SwaggerGen 6.2.3 with net6.0.
+2022-12-23T23:42:34.3762220Z Checking compatibility for Swashbuckle.AspNetCore.SwaggerUI 6.2.3 with net6.0.
+2022-12-23T23:42:34.3762601Z Checking compatibility for Microsoft.Extensions.ApiDescription.Server 3.0.0 with net6.0.
+2022-12-23T23:42:34.3762963Z Checking compatibility for Microsoft.OpenApi 1.2.3 with net6.0.
+2022-12-23T23:42:34.3763268Z All packages and projects are compatible with net6.0.
+2022-12-23T23:42:34.3763554Z All packages and projects are compatible with net6.0.
+2022-12-23T23:42:34.3763812Z Committing restore...
+2022-12-23T23:42:34.3764476Z Committing restore...
+2022-12-23T23:42:34.3764784Z Generating MSBuild file D:\a\1\s\ApiDemo\obj\ApiDemo.csproj.nuget.g.props.
+2022-12-23T23:42:34.3765196Z Generating MSBuild file D:\a\1\s\MinimalApiDemo\obj\MinimalApiDemo.csproj.nuget.g.props.
+2022-12-23T23:42:34.3765575Z Writing assets file to disk. Path: D:\a\1\s\ApiDemo\obj\project.assets.json
+2022-12-23T23:42:34.3765933Z Writing assets file to disk. Path: D:\a\1\s\MinimalApiDemo\obj\project.assets.json
+2022-12-23T23:42:34.3766302Z Writing cache file to disk. Path: D:\a\1\s\ApiDemo\obj\project.nuget.cache
+2022-12-23T23:42:34.3766656Z Writing cache file to disk. Path: D:\a\1\s\MinimalApiDemo\obj\project.nuget.cache
+2022-12-23T23:42:34.3767007Z Persisting dg to D:\a\1\s\ApiDemo\obj\ApiDemo.csproj.nuget.dgspec.json
+2022-12-23T23:42:34.3767377Z Persisting dg to D:\a\1\s\MinimalApiDemo\obj\MinimalApiDemo.csproj.nuget.dgspec.json
+2022-12-23T23:42:34.3767719Z Restored D:\a\1\s\ApiDemo\ApiDemo.csproj (in 3.79 sec).
+2022-12-23T23:42:34.3768045Z Restored D:\a\1\s\MinimalApiDemo\MinimalApiDemo.csproj (in 3.79 sec).
+2022-12-23T23:42:34.3768211Z 
+2022-12-23T23:42:34.3768391Z NuGet Config files used:
+2022-12-23T23:42:34.3768635Z     D:\a\1\Nuget\tempNuGet_13.config
+2022-12-23T23:42:34.3768749Z 
+2022-12-23T23:42:34.3768924Z Feeds used:
+2022-12-23T23:42:34.3769573Z     C:\Program Files\dotnet\library-packs
+2022-12-23T23:42:34.3769831Z     https://api.nuget.org/v3/index.json
+2022-12-23T23:42:34.3769951Z 
+2022-12-23T23:42:34.3770243Z Installed:
+2022-12-23T23:42:34.3770691Z     6 package(s) to D:\a\1\s\MinimalApiDemo\MinimalApiDemo.csproj
+2022-12-23T23:42:34.3771177Z     6 package(s) to D:\a\1\s\ApiDemo\ApiDemo.csproj
+2022-12-23T23:42:34.4167600Z ##[section]Finishing: NuGetCommand

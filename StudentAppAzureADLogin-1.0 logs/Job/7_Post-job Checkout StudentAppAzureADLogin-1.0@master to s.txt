@@ -1,0 +1,10 @@
+2022-12-31T14:54:50.0228659Z ##[section]Starting: Checkout StudentAppAzureADLogin-1.0@master to s
+2022-12-31T14:54:50.0363810Z ==============================================================================
+2022-12-31T14:54:50.0364128Z Task         : Get sources
+2022-12-31T14:54:50.0364393Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-31T14:54:50.0364641Z Version      : 1.0.0
+2022-12-31T14:54:50.0364827Z Author       : Microsoft
+2022-12-31T14:54:50.0365089Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-31T14:54:50.0365401Z ==============================================================================
+2022-12-31T14:54:50.4248490Z Cleaning any cached credential from repository: StudentAppAzureADLogin-1.0 (Git)
+2022-12-31T14:54:50.4351226Z ##[section]Finishing: Checkout StudentAppAzureADLogin-1.0@master to s

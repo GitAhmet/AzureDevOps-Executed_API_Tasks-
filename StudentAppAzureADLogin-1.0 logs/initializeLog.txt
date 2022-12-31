@@ -1,0 +1,75 @@
+Template Parameters:
+Begin evaluating template '/azure-pipelines.yml'
+Begin transform: trigger
+Evaluating: value
+Result: Object
+End transform: trigger
+Begin transform: variables
+Evaluating: value
+Result: Object
+Evaluating: pair['key']
+Result: 'solution'
+Evaluating: pair['value']
+Result: '**/*.sln'
+Evaluating: pair['key']
+Result: 'buildPlatform'
+Evaluating: pair['value']
+Result: 'Any CPU'
+Evaluating: pair['key']
+Result: 'buildConfiguration'
+Evaluating: pair['value']
+Result: 'Release'
+End transform: variables
+Begin transform: pipeline
+Evaluating: value
+Result: Object
+Evaluating: notIn(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: notIn('trigger', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: True
+Evaluating: pair['key']
+Result: 'trigger'
+Evaluating: pair['value']
+Result: Object
+Evaluating: notIn(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: notIn('pool', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: False
+Evaluating: notIn(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: notIn('variables', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: True
+Evaluating: pair['key']
+Result: 'variables'
+Evaluating: pair['value']
+Result: Object
+Evaluating: notIn(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: notIn('steps', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: False
+Evaluating: value
+Result: Object
+Evaluating: in(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: in('trigger', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: False
+Evaluating: in(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: in('pool', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: True
+Evaluating: pair['key']
+Result: 'pool'
+Evaluating: pair['value']
+Result: Object
+Evaluating: in(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: in('variables', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: False
+Evaluating: in(pair['key'], 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Expanded: in('steps', 'strategy', 'continueOnError', 'pool', 'container', 'services', 'workspace', 'steps')
+Result: True
+Evaluating: pair['key']
+Result: 'steps'
+Evaluating: pair['value']
+Result: Object
+End transform: pipeline
+Finished evaluating template '/azure-pipelines.yml'
+Load Time: 00:00:00.0131337
+Estimated Memory: 15,574 bytes (Max: 20,971,520)
+Parser Event Count: 595 (Max: 10,000,000)
+Greatest Parser Depth: 14 (Max: 100)
+File Count: 1 (Max: 100)
+Greatest File Size: 985 (Max: 1,048,576)

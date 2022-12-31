@@ -1,0 +1,192 @@
+2022-12-31T14:52:30.0019875Z ##[section]Starting: Checkout StudentAppAzureADLogin-1.0@master to s
+2022-12-31T14:52:30.1196891Z ==============================================================================
+2022-12-31T14:52:30.1197584Z Task         : Get sources
+2022-12-31T14:52:30.1197973Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-12-31T14:52:30.1198234Z Version      : 1.0.0
+2022-12-31T14:52:30.1198514Z Author       : Microsoft
+2022-12-31T14:52:30.1199004Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-12-31T14:52:30.1199331Z ==============================================================================
+2022-12-31T14:52:30.9000620Z Syncing repository: StudentAppAzureADLogin-1.0 (Git)
+2022-12-31T14:52:30.9176226Z Prepending Path environment variable with directory containing 'git.exe'.
+2022-12-31T14:52:30.9296510Z ##[command]git version
+2022-12-31T14:52:31.1186616Z git version 2.38.1.windows.1
+2022-12-31T14:52:31.1216858Z ##[command]git lfs version
+2022-12-31T14:52:31.4899734Z git-lfs/2.13.3 (GitHub; windows amd64; go 1.16.2; git a5e65851)
+2022-12-31T14:52:31.5071218Z ##[command]git init "D:\a\1\s"
+2022-12-31T14:52:31.6136736Z Initialized empty Git repository in D:/a/1/s/.git/
+2022-12-31T14:52:31.6186446Z ##[command]git remote add origin https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/StudentAppAzureADLogin-1.0
+2022-12-31T14:52:31.6712205Z ##[command]git config gc.auto 0
+2022-12-31T14:52:31.7204858Z ##[command]git config --get-all http.https://AhmetUlucay@dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/StudentAppAzureADLogin-1.0.extraheader
+2022-12-31T14:52:31.7684357Z ##[command]git config --get-all http.extraheader
+2022-12-31T14:52:31.8298924Z ##[command]git config --get-regexp .*extraheader
+2022-12-31T14:52:31.8822638Z ##[command]git config --get-all http.proxy
+2022-12-31T14:52:31.9444335Z ##[command]git config http.version HTTP/1.1
+2022-12-31T14:52:32.0051019Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +7bc942c6c2191a485da458ee7dd7c2903d7ba96a:refs/remotes/origin/7bc942c6c2191a485da458ee7dd7c2903d7ba96a
+2022-12-31T14:52:32.6733019Z remote: Azure Repos        
+2022-12-31T14:52:32.8334165Z remote: 
+2022-12-31T14:52:32.8338840Z remote: Found 134 objects to send. (160 ms)        
+2022-12-31T14:52:32.8597151Z Receiving objects:   0% (1/134)
+2022-12-31T14:52:32.8624116Z Receiving objects:   1% (2/134)
+2022-12-31T14:52:32.8724428Z Receiving objects:   2% (3/134)
+2022-12-31T14:52:32.8725991Z Receiving objects:   3% (5/134)
+2022-12-31T14:52:32.8726939Z Receiving objects:   4% (6/134)
+2022-12-31T14:52:32.8728137Z Receiving objects:   5% (7/134)
+2022-12-31T14:52:32.8729066Z Receiving objects:   6% (9/134)
+2022-12-31T14:52:32.8730012Z Receiving objects:   7% (10/134)
+2022-12-31T14:52:32.8731398Z Receiving objects:   8% (11/134)
+2022-12-31T14:52:32.8732279Z Receiving objects:   9% (13/134)
+2022-12-31T14:52:32.8733528Z Receiving objects:  10% (14/134)
+2022-12-31T14:52:32.8734557Z Receiving objects:  11% (15/134)
+2022-12-31T14:52:32.8735130Z Receiving objects:  12% (17/134)
+2022-12-31T14:52:32.8735890Z Receiving objects:  13% (18/134)
+2022-12-31T14:52:32.8736780Z Receiving objects:  14% (19/134)
+2022-12-31T14:52:32.8737487Z Receiving objects:  15% (21/134)
+2022-12-31T14:52:32.8738087Z Receiving objects:  16% (22/134)
+2022-12-31T14:52:32.8738699Z Receiving objects:  17% (23/134)
+2022-12-31T14:52:32.8739551Z Receiving objects:  18% (25/134)
+2022-12-31T14:52:32.8740484Z Receiving objects:  19% (26/134)
+2022-12-31T14:52:32.8741241Z Receiving objects:  20% (27/134)
+2022-12-31T14:52:32.8741782Z Receiving objects:  21% (29/134)
+2022-12-31T14:52:32.8742868Z Receiving objects:  22% (30/134)
+2022-12-31T14:52:32.8743450Z Receiving objects:  23% (31/134)
+2022-12-31T14:52:32.8744214Z Receiving objects:  24% (33/134)
+2022-12-31T14:52:32.8744713Z Receiving objects:  25% (34/134)
+2022-12-31T14:52:32.8746877Z Receiving objects:  26% (35/134)
+2022-12-31T14:52:32.8747569Z Receiving objects:  27% (37/134)
+2022-12-31T14:52:32.8748028Z Receiving objects:  28% (38/134)
+2022-12-31T14:52:32.8748414Z Receiving objects:  29% (39/134)
+2022-12-31T14:52:32.8749791Z Receiving objects:  30% (41/134)
+2022-12-31T14:52:32.8750731Z Receiving objects:  31% (42/134)
+2022-12-31T14:52:32.8751026Z Receiving objects:  32% (43/134)
+2022-12-31T14:52:32.8751295Z Receiving objects:  33% (45/134)
+2022-12-31T14:52:32.8751546Z Receiving objects:  34% (46/134)
+2022-12-31T14:52:32.8751799Z Receiving objects:  35% (47/134)
+2022-12-31T14:52:32.8752077Z Receiving objects:  36% (49/134)
+2022-12-31T14:52:32.8752787Z Receiving objects:  37% (50/134)
+2022-12-31T14:52:32.8753278Z Receiving objects:  38% (51/134)
+2022-12-31T14:52:32.8753848Z Receiving objects:  39% (53/134)
+2022-12-31T14:52:32.8754661Z Receiving objects:  40% (54/134)
+2022-12-31T14:52:32.8755301Z Receiving objects:  41% (55/134)
+2022-12-31T14:52:32.8755922Z Receiving objects:  42% (57/134)
+2022-12-31T14:52:32.8757311Z Receiving objects:  43% (58/134)
+2022-12-31T14:52:32.8757767Z Receiving objects:  44% (59/134)
+2022-12-31T14:52:32.8758148Z Receiving objects:  45% (61/134)
+2022-12-31T14:52:32.8758596Z Receiving objects:  46% (62/134)
+2022-12-31T14:52:32.8759030Z Receiving objects:  47% (63/134)
+2022-12-31T14:52:32.8760344Z Receiving objects:  48% (65/134)
+2022-12-31T14:52:32.8760848Z Receiving objects:  49% (66/134)
+2022-12-31T14:52:32.8761205Z Receiving objects:  50% (67/134)
+2022-12-31T14:52:32.8761466Z Receiving objects:  51% (69/134)
+2022-12-31T14:52:32.8769738Z Receiving objects:  52% (70/134)
+2022-12-31T14:52:32.8770366Z Receiving objects:  53% (72/134)
+2022-12-31T14:52:32.8784167Z Receiving objects:  54% (73/134)
+2022-12-31T14:52:32.8858736Z Receiving objects:  55% (74/134)
+2022-12-31T14:52:32.8863388Z Receiving objects:  56% (76/134)
+2022-12-31T14:52:32.8864022Z Receiving objects:  57% (77/134)
+2022-12-31T14:52:32.8881306Z Receiving objects:  58% (78/134)
+2022-12-31T14:52:32.8882177Z Receiving objects:  59% (80/134)
+2022-12-31T14:52:32.8884117Z Receiving objects:  60% (81/134)
+2022-12-31T14:52:32.8886840Z Receiving objects:  61% (82/134)
+2022-12-31T14:52:32.8887386Z Receiving objects:  62% (84/134)
+2022-12-31T14:52:32.8887804Z Receiving objects:  63% (85/134)
+2022-12-31T14:52:32.8901512Z Receiving objects:  64% (86/134)
+2022-12-31T14:52:32.8902094Z Receiving objects:  65% (88/134)
+2022-12-31T14:52:32.8902604Z Receiving objects:  66% (89/134)
+2022-12-31T14:52:32.8903370Z Receiving objects:  67% (90/134)
+2022-12-31T14:52:32.8904036Z Receiving objects:  68% (92/134)
+2022-12-31T14:52:32.8909358Z Receiving objects:  69% (93/134)
+2022-12-31T14:52:32.8930010Z Receiving objects:  70% (94/134)
+2022-12-31T14:52:32.8948584Z Receiving objects:  71% (96/134)
+2022-12-31T14:52:32.8949777Z Receiving objects:  72% (97/134)
+2022-12-31T14:52:32.8950557Z Receiving objects:  73% (98/134)
+2022-12-31T14:52:32.8951241Z Receiving objects:  74% (100/134)
+2022-12-31T14:52:32.9006854Z Receiving objects:  75% (101/134)
+2022-12-31T14:52:32.9026696Z Receiving objects:  76% (102/134)
+2022-12-31T14:52:32.9072684Z Receiving objects:  77% (104/134)
+2022-12-31T14:52:32.9091648Z Receiving objects:  78% (105/134)
+2022-12-31T14:52:32.9101027Z Receiving objects:  79% (106/134)
+2022-12-31T14:52:32.9110506Z Receiving objects:  80% (108/134)
+2022-12-31T14:52:32.9122238Z Receiving objects:  81% (109/134)
+2022-12-31T14:52:32.9141267Z Receiving objects:  82% (110/134)
+2022-12-31T14:52:32.9144102Z Receiving objects:  83% (112/134)
+2022-12-31T14:52:32.9148102Z Receiving objects:  84% (113/134)
+2022-12-31T14:52:32.9155132Z Receiving objects:  85% (114/134)
+2022-12-31T14:52:32.9155635Z Receiving objects:  86% (116/134)
+2022-12-31T14:52:32.9159749Z Receiving objects:  87% (117/134)
+2022-12-31T14:52:32.9161813Z Receiving objects:  88% (118/134)
+2022-12-31T14:52:32.9162363Z Receiving objects:  89% (120/134)
+2022-12-31T14:52:32.9167442Z Receiving objects:  90% (121/134)
+2022-12-31T14:52:32.9175974Z Receiving objects:  91% (122/134)
+2022-12-31T14:52:32.9180455Z Receiving objects:  92% (124/134)
+2022-12-31T14:52:32.9182160Z Receiving objects:  93% (125/134)
+2022-12-31T14:52:32.9214913Z Receiving objects:  94% (126/134)
+2022-12-31T14:52:32.9226253Z Receiving objects:  95% (128/134)
+2022-12-31T14:52:32.9245583Z Receiving objects:  96% (129/134)
+2022-12-31T14:52:32.9246097Z Receiving objects:  97% (130/134)
+2022-12-31T14:52:32.9246574Z Receiving objects:  98% (132/134)
+2022-12-31T14:52:32.9246992Z Receiving objects:  99% (133/134)
+2022-12-31T14:52:32.9250151Z Receiving objects: 100% (134/134)
+2022-12-31T14:52:32.9250754Z Receiving objects: 100% (134/134), 1.16 MiB | 17.27 MiB/s, done.
+2022-12-31T14:52:32.9261953Z Resolving deltas:   0% (0/36)
+2022-12-31T14:52:32.9263693Z Resolving deltas:   2% (1/36)
+2022-12-31T14:52:32.9264816Z Resolving deltas:   5% (2/36)
+2022-12-31T14:52:32.9266329Z Resolving deltas:   8% (3/36)
+2022-12-31T14:52:32.9267487Z Resolving deltas:  11% (4/36)
+2022-12-31T14:52:32.9268647Z Resolving deltas:  13% (5/36)
+2022-12-31T14:52:32.9269412Z Resolving deltas:  16% (6/36)
+2022-12-31T14:52:32.9270108Z Resolving deltas:  19% (7/36)
+2022-12-31T14:52:32.9285869Z Resolving deltas:  22% (8/36)
+2022-12-31T14:52:32.9306993Z Resolving deltas:  25% (9/36)
+2022-12-31T14:52:32.9315926Z Resolving deltas:  30% (11/36)
+2022-12-31T14:52:32.9317526Z Resolving deltas:  33% (12/36)
+2022-12-31T14:52:32.9318536Z Resolving deltas:  36% (13/36)
+2022-12-31T14:52:32.9320631Z Resolving deltas:  38% (14/36)
+2022-12-31T14:52:32.9323102Z Resolving deltas:  41% (15/36)
+2022-12-31T14:52:32.9332163Z Resolving deltas:  44% (16/36)
+2022-12-31T14:52:32.9333891Z Resolving deltas:  47% (17/36)
+2022-12-31T14:52:32.9339492Z Resolving deltas:  50% (18/36)
+2022-12-31T14:52:32.9345097Z Resolving deltas:  52% (19/36)
+2022-12-31T14:52:32.9347374Z Resolving deltas:  55% (20/36)
+2022-12-31T14:52:32.9383100Z Resolving deltas:  58% (21/36)
+2022-12-31T14:52:32.9407862Z Resolving deltas:  63% (23/36)
+2022-12-31T14:52:32.9408798Z Resolving deltas:  66% (24/36)
+2022-12-31T14:52:32.9413801Z Resolving deltas:  69% (25/36)
+2022-12-31T14:52:32.9416160Z Resolving deltas:  72% (26/36)
+2022-12-31T14:52:32.9426472Z Resolving deltas:  75% (27/36)
+2022-12-31T14:52:32.9432849Z Resolving deltas:  77% (28/36)
+2022-12-31T14:52:32.9439596Z Resolving deltas:  80% (29/36)
+2022-12-31T14:52:32.9444824Z Resolving deltas:  86% (31/36)
+2022-12-31T14:52:32.9450630Z Resolving deltas:  88% (32/36)
+2022-12-31T14:52:32.9471694Z Resolving deltas:  91% (33/36)
+2022-12-31T14:52:32.9472790Z Resolving deltas:  94% (34/36)
+2022-12-31T14:52:32.9479329Z Resolving deltas:  97% (35/36)
+2022-12-31T14:52:32.9483268Z Resolving deltas: 100% (36/36)
+2022-12-31T14:52:32.9484052Z Resolving deltas: 100% (36/36), done.
+2022-12-31T14:52:33.0577732Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/StudentAppAzureADLogin-1.0
+2022-12-31T14:52:33.0579256Z  * [new ref]         7bc942c6c2191a485da458ee7dd7c2903d7ba96a -> origin/7bc942c6c2191a485da458ee7dd7c2903d7ba96a
+2022-12-31T14:52:33.1431208Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +7bc942c6c2191a485da458ee7dd7c2903d7ba96a
+2022-12-31T14:52:33.3438830Z remote: Azure Repos        
+2022-12-31T14:52:33.4020087Z remote: 
+2022-12-31T14:52:33.4020814Z remote: Found 0 objects to send. (59 ms)        
+2022-12-31T14:52:33.4671955Z From https://dev.azure.com/AhmetUlucay/MyGitHubRepos/_git/StudentAppAzureADLogin-1.0
+2022-12-31T14:52:33.4672890Z  * branch            7bc942c6c2191a485da458ee7dd7c2903d7ba96a -> FETCH_HEAD
+2022-12-31T14:52:33.5634484Z ##[command]git checkout --progress --force refs/remotes/origin/7bc942c6c2191a485da458ee7dd7c2903d7ba96a
+2022-12-31T14:52:33.7047251Z Note: switching to 'refs/remotes/origin/7bc942c6c2191a485da458ee7dd7c2903d7ba96a'.
+2022-12-31T14:52:33.7047961Z 
+2022-12-31T14:52:33.7051474Z You are in 'detached HEAD' state. You can look around, make experimental
+2022-12-31T14:52:33.7052569Z changes and commit them, and you can discard any commits you make in this
+2022-12-31T14:52:33.7053162Z state without impacting any branches by switching back to a branch.
+2022-12-31T14:52:33.7053439Z 
+2022-12-31T14:52:33.7053889Z If you want to create a new branch to retain commits you create, you may
+2022-12-31T14:52:33.7054472Z do so (now or later) by using -c with the switch command. Example:
+2022-12-31T14:52:33.7054730Z 
+2022-12-31T14:52:33.7055073Z   git switch -c <new-branch-name>
+2022-12-31T14:52:33.7055271Z 
+2022-12-31T14:52:33.7055593Z Or undo this operation with:
+2022-12-31T14:52:33.7055763Z 
+2022-12-31T14:52:33.7056074Z   git switch -
+2022-12-31T14:52:33.7056225Z 
+2022-12-31T14:52:33.7056973Z Turn off this advice by setting config variable advice.detachedHead to false
+2022-12-31T14:52:33.7057393Z 
+2022-12-31T14:52:33.7058211Z HEAD is now at 7bc942c Set up CI with Azure Pipelines
+2022-12-31T14:52:33.7249145Z ##[section]Finishing: Checkout StudentAppAzureADLogin-1.0@master to s

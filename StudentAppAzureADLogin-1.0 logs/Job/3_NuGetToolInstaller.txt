@@ -1,0 +1,17 @@
+2022-12-31T14:52:34.4705115Z ##[section]Starting: NuGetToolInstaller
+2022-12-31T14:52:34.4844150Z ==============================================================================
+2022-12-31T14:52:34.4844469Z Task         : NuGet tool installer
+2022-12-31T14:52:34.4844881Z Description  : Acquires a specific version of NuGet from the internet or the tools cache and adds it to the PATH. Use this task to change the version of NuGet used in the NuGet tasks.
+2022-12-31T14:52:34.4845265Z Version      : 1.208.1
+2022-12-31T14:52:34.4845477Z Author       : Microsoft Corporation
+2022-12-31T14:52:34.4845741Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/nuget
+2022-12-31T14:52:34.4846053Z ==============================================================================
+2022-12-31T14:52:35.5161940Z You are using a query match on the version string. Behavior changes or breaking changes might occur as NuGet updates to a new version.
+2022-12-31T14:52:35.7532459Z Downloading: https://dist.nuget.org/win-x86-commandline/v6.4.0/nuget.exe
+2022-12-31T14:52:35.9025327Z Caching tool: NuGet 6.4.0 x64
+2022-12-31T14:52:35.9151846Z Using version: 6.4.0
+2022-12-31T14:52:35.9159475Z Found tool in cache: NuGet 6.4.0 x64
+2022-12-31T14:52:35.9160194Z Using tool path: C:\hostedtoolcache\windows\NuGet\6.4.0\x64
+2022-12-31T14:52:35.9161690Z Prepending PATH environment variable with directory: C:\hostedtoolcache\windows\NuGet\6.4.0\x64
+2022-12-31T14:52:35.9939963Z [command]"C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/msbuild.exe" /version /nologo
+2022-12-31T14:52:37.2315095Z ##[section]Finishing: NuGetToolInstaller
